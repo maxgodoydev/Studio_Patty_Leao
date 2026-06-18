@@ -443,8 +443,10 @@ Projeto desenvolvido no contexto acadêmico do curso de **Desenvolvimento de Sof
 
 A versão final publicada foi estruturada e consolidada principalmente por:
 
+## Equipe e contribuições
+
 | Integrante | Principais contribuições |
-|---|---|
+|------------|--------------------------|
 | **Max Godoy** | Reestruturação geral do projeto, mudança de escopo de e-commerce para ERP simples, organização da arquitetura MVC, reestruturação do banco MongoDB Atlas, deploy no Render, versionamento no GitHub, regras de negócio, BI e integração geral da aplicação. |
 | **Luca Simões Dagostino** | Organização da arquitetura MVC, validação da estrutura do sistema, participação na transformação do projeto para ERP simples, contribuições em fluxos operacionais, BI, testes de funcionalidades e consolidação da versão final. |
 | **Maycon Lima Teixeira Cavalcante** | Modelagem e validação do banco de dados, análise das regras de negócio, validação de decisões operacionais, participação na arquitetura MVC e olhar crítico sobre consistência dos dados, fluxos e estrutura geral do sistema. |
