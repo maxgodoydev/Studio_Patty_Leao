@@ -2,481 +2,320 @@
 
 # 🦁 Studio Patty Leão
 
-## Sistema Operacional de Salão
+### Sistema operacional para salão de beleza
 
-**Plataforma web para gestão operacional de salão de beleza, com agendamentos, atendimento, estoque, financeiro manual, vitrine de reservas e BI.**
+Agenda, recepção, estoque, financeiro manual, vitrine de reservas e BI em uma única plataforma web.
 
 <br>
 
-<a href="https://studio-patty-leao.onrender.com" target="_blank">
-  <img src="https://img.shields.io/badge/Acessar%20Plataforma-Studio%20Patty%20Leão-FACC15?style=for-the-badge&logo=render&logoColor=000000" />
-</a>
+[![Acessar plataforma](https://img.shields.io/badge/🌐_Acessar_plataforma-FACC15?style=for-the-badge&logoColor=000000&labelColor=FACC15&color=FACC15)](https://studio-patty-leao.onrender.com)
 
-<br><br>
-
-### 🎓 Contexto do Projeto
-
-<img src="https://img.shields.io/badge/Projeto-Acadêmico-0F172A?style=for-the-badge" />
-<img src="https://img.shields.io/badge/FATEC-Zona%20Sul-2563EB?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Curso-DSM-1D4ED8?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Status-Online-16A34A?style=for-the-badge" />
-
-<br><br>
-
-### ⚙️ Stack Principal
-
-<img src="https://img.shields.io/badge/Node.js-18+-339933?style=for-the-badge&logo=node.js&logoColor=white" />
-<img src="https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=000000" />
-<img src="https://img.shields.io/badge/Express.js-4.x-111827?style=for-the-badge&logo=express&logoColor=white" />
-<img src="https://img.shields.io/badge/EJS-Views-B4CA65?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white" />
-
-<br><br>
-
-### 🗄️ Banco, Deploy e Segurança
-
-<img src="https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-<img src="https://img.shields.io/badge/Mongoose-8.x-880000?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Deploy-Render-46E3B7?style=for-the-badge&logo=render&logoColor=000000" />
-<img src="https://img.shields.io/badge/Auth-Session%20%2B%20bcrypt-F59E0B?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Banco-NoSQL-10B981?style=for-the-badge" />
-
-<br><br>
-
-### 🧩 Organização do Sistema
-
-<img src="https://img.shields.io/badge/Arquitetura-MVC-7C3AED?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Foco-Gestão%20Operacional-020617?style=for-the-badge" />
-<img src="https://img.shields.io/badge/BI-Dashboards-EC4899?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Financeiro-Manual-64748B?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Vitrine-Reserva%20Presencial-FACC15?style=for-the-badge" />
+![Status](https://img.shields.io/badge/status-online-16A34A?style=flat-square)
+![Projeto](https://img.shields.io/badge/projeto-3%C2%BA_semestre-2563EB?style=flat-square)
+![Instituição](https://img.shields.io/badge/FATEC-Zona_Sul-0F172A?style=flat-square)
+![Curso](https://img.shields.io/badge/curso-DSM-1D4ED8?style=flat-square)
 
 </div>
 
 ---
 
-## 📌 Sobre o projeto
+## 📌 O problema e para quem foi feito
 
-O **Studio Patty Leão — Sistema Operacional de Salão** é uma aplicação web desenvolvida como projeto acadêmico extensionista do curso de **Desenvolvimento de Software Multiplataforma da FATEC Zona Sul**.
+O **Studio Patty Leão** é um salão de beleza real, em São Paulo. Antes deste projeto, ele nunca tinha tido site nem qualquer sistema digital parecido, e tocava a rotina com cadernos, folhas, mensagens e controles separados.
 
-A proposta do sistema é apoiar a rotina operacional de um salão de beleza, reunindo em uma única plataforma recursos de:
+Na prática, isso gerava:
 
-- agendamento de serviços;
-- atendimento e acompanhamento da recepção;
-- agenda dos profissionais;
-- vitrine digital para reserva presencial de produtos;
-- controle operacional de estoque;
-- financeiro simples/manual;
-- dashboard básico de BI;
-- página institucional online.
+- risco de conflito de horários e perda de controle da agenda;
+- pouca visibilidade sobre o estoque de produtos e insumos;
+- nenhuma visão rápida de entradas e saídas;
+- decisões tomadas sem dados.
 
-Antes do projeto, a empresa não possuía site próprio e parte da rotina era feita de forma manual, com apoio de cadernos, folhas, mensagens e controles separados. Isso dificultava a organização dos horários, o acompanhamento dos atendimentos, o controle de insumos e a tomada de decisão.
+**Para quem:** a dona do salão e a recepção (gestão e operação), os profissionais (agenda própria) e as clientes (agendamento e reserva de produtos).
 
 ---
 
-## 🎯 Problema identificado
+## 🖼️ Aplicação rodando
 
-Durante a análise da rotina do Studio Patty Leão, foram identificados alguns gargalos operacionais:
+**Recepção:** agendamento de balcão com horários livres bloqueando os ocupados, agenda mensal por semana, status do atendimento e forma de pagamento.
 
-| Problema | Impacto na operação |
+![Recepção](docs/screenshots/recepcao.png)
+
+**BI Central:** profissionais mais requisitadas, status dos agendamentos no mês, estoque crítico, reservas da vitrine e próximos atendimentos.
+
+![BI Central](docs/screenshots/bi.png)
+
+**Estoque:** cada movimentação registra a origem. Entradas e saídas manuais aparecem como `MANUAL`, e a baixa de insumo ao concluir um atendimento aparece como `ATENDIMENTO`.
+
+![Movimentações de estoque](docs/screenshots/estoque-movimentacoes.png)
+
+<details>
+<summary><b>Ver mais telas</b> (site público, serviços, vitrine, localização)</summary>
+
+<br>
+
+**Home**
+
+![Home](docs/screenshots/home.png)
+
+**Serviços e preços por tamanho de cabelo**
+
+![Serviços](docs/screenshots/servicos.png)
+
+**Vitrine de reserva presencial** (reserva exige login)
+
+![Vitrine](docs/screenshots/vitrine.png)
+
+**Localização e horário de funcionamento**
+
+![Localização](docs/screenshots/localizacao.png)
+
+</details>
+
+---
+
+## ✅ Cliente real
+
+O sistema foi apresentado à dona do salão em um teste de usabilidade de cerca de 40 minutos, cobrindo os fluxos principais e os módulos. Ela não pediu nenhuma alteração. O salão nunca tinha tido site nem sistema parecido, então esse foi o primeiro contato dela com uma ferramenta desse tipo.
+
+---
+
+## 🎓 Contexto acadêmico
+
+Projeto do **3º semestre** do curso de **Desenvolvimento de Software Multiplataforma (DSM)** da **FATEC Zona Sul**, desenvolvido como atividade extensionista para uma organização real.
+
+---
+
+## 👤 O que eu fiz
+
+Projeto em equipe de três pessoas. A minha parte, como **Max Godoy**:
+
+- reestruturação geral do projeto e **mudança de escopo** de e-commerce para ERP simples;
+- organização da arquitetura MVC e das regras de negócio;
+- reestruturação do banco no **MongoDB Atlas**;
+- BI e integração geral da aplicação;
+- deploy no Render e versionamento no GitHub.
+
+Veja a [equipe completa](#-equipe) no final.
+
+---
+
+## 🧭 Como funciona
+
+Tudo parte do agendamento. Cada etapa alimenta a seguinte:
+
+```txt
+AGENDAMENTO → ATENDIMENTO → CONSUMO DE INSUMOS → ESTOQUE → FINANCEIRO MANUAL → BI
+```
+
+### Módulos
+
+| Módulo | O que entrega |
 |---|---|
-| Ausência de site institucional | Menor presença digital e pouca centralização de informações |
-| Agendamentos manuais | Maior risco de conflito de horários e perda de controle |
-| Falta de agenda digital | Dificuldade para acompanhar profissionais e atendimentos |
-| Estoque não integrado | Baixa visibilidade sobre produtos e insumos |
-| Financeiro manual disperso | Falta de visão rápida sobre entradas e saídas |
-| Vitrine sem reserva digital | Produtos divulgados sem fluxo organizado de retirada |
-| Falta de BI | Pouca base para tomada de decisão |
+| 🌐 **Site institucional** | Início, sobre, serviços, galeria (progressivas, escovas, tratamentos, cronogramas), vitrine, contato, mapa e horários |
+| 📅 **Agendamentos** | Escolha de serviço e profissional, validação de data e horário, bloqueio de conflito, cálculo de duração |
+| 🧾 **Recepção** | Agenda operacional, cadastro rápido de cliente, agendamento de balcão, mudança de status e registro do pagamento |
+| 💇 **Profissionais** | Agenda mensal, faturamento de serviços concluídos, cancelamentos e faltas como alerta, clientes mais atendidas |
+| 🛍️ **Vitrine** | Reserva presencial de produtos (sem venda online) |
+| 📦 **Estoque** | Produtos e insumos, entrada e saída manual, estoque mínimo, alerta de estoque crítico, baixa automática ao concluir atendimento |
+| 🚚 **Fornecedores** | Cadastro simples de fornecedores de produtos e insumos |
+| 💰 **Financeiro** | Caixa do dia (abertura e fechamento), entradas, saídas e lançamento manual, por forma de pagamento presencial (PIX, dinheiro, débito) |
+| 📊 **BI** | Atendimentos, cancelamentos, faltas, serviços e profissionais mais requisitados, reservas da vitrine, estoque crítico, entradas |
 
-A solução foi pensada para reduzir a dependência de controles soltos e criar uma base digital simples, funcional e evolutiva para o salão.
+### Regras de negócio
 
----
+- **Insumos:** baixados quando o atendimento é marcado como `Concluido`.
+- **Produtos da vitrine:** baixados quando a reserva é marcada como retirada.
+- **Conflito de agenda:** horários ocupados ficam bloqueados na hora de agendar.
+- **Alergia:** o agendamento permite registrar que a cliente informou alergia, e a agenda exibe um alerta ao lado do nome.
+- **Cancelamentos e faltas:** não são descontados do faturamento, servem de alerta operacional.
 
-## 🔄 Mudança de escopo
-
-No início do semestre, a proposta caminhava para um modelo mais próximo de **e-commerce**, com vitrine e venda digital.
-
-Ao longo do desenvolvimento, a equipe percebeu que esse caminho não resolvia o principal problema da empresa. O maior valor para o Studio Patty Leão estava menos na venda online e mais na organização da operação diária.
-
-Por isso, o projeto foi resetado e redirecionado para um **ERP simples de salão**, com foco em:
-
-```txt
-agendamentos
-atendimentos
-estoque
-financeiro manual
-vitrine de reservas
-BI
-```
-
-Também houve uma mudança importante na estrutura do banco de dados. A ideia inicial usava uma modelagem mais próxima do modelo relacional, mas a versão final foi refeita em um modelo **não relacional com MongoDB**, utilizando o **MongoDB Atlas** para manter o banco online.
-
----
-
-## 🧭 Fluxo central do sistema
+### Status do agendamento
 
 ```txt
-AGENDAMENTO
-    ↓
-ATENDIMENTO
-    ↓
-CONSUMO DE INSUMOS
-    ↓
-MOVIMENTAÇÃO DE ESTOQUE
-    ↓
-REGISTRO FINANCEIRO MANUAL
-    ↓
-BI
+Agendado → Confirmado → Em Atendimento → Concluido
+                    ↘ Cancelado | Faltou | Reagendado
 ```
 
-Esse fluxo conecta as principais áreas da aplicação e permite que os dados gerados na operação alimentem estoque, financeiro e indicadores.
+### Permissões
 
----
-
-## 🧱 Tecnologias utilizadas
-
-| Categoria | Tecnologias |
-|---|---|
-| Runtime | Node.js |
-| Linguagem | JavaScript |
-| Framework | Express.js |
-| Banco de dados | MongoDB Atlas |
-| ODM | Mongoose |
-| Views | EJS |
-| Interface | HTML, CSS, Bootstrap |
-| Autenticação | Express Session, bcrypt e token de sessão |
-| Deploy | Render |
-| Versionamento | Git e GitHub |
-
----
-
-## 🏗️ Arquitetura
-
-O projeto segue o padrão **MVC**, com separação entre camadas de dados, regras de negócio, rotas, autenticação e interface.
-
-```txt
-models/                 → Schemas Mongoose
-controllers/            → Entrada das regras por rota
-services/               → Regras de negócio principais
-routes/                 → Rotas Express
-middlewares/            → Autenticação, permissões e sessão
-views/                  → Templates EJS
-assets/                 → CSS, JS, imagens e vídeos
-mongodb-seeds-json/     → Arquivos JSON para importação manual no MongoDB Atlas
-```
-
-A pasta `services/` concentra partes importantes da lógica do sistema, como agendamentos, estoque, financeiro e BI.
-
----
-
-## 🧩 Módulos principais
-
-### 🌐 Site institucional
-
-- Página inicial;
-- página sobre;
-- página de serviços;
-- galeria;
-- vitrine digital;
-- contato e horários.
-
-### 📅 Agendamentos
-
-- escolha de serviço;
-- escolha de profissional;
-- validação de data e horário;
-- bloqueio de conflito de agenda;
-- cálculo de duração do serviço;
-- status operacional do atendimento.
-
-### 🧾 Recepção
-
-- agenda operacional;
-- cadastro rápido de cliente;
-- agendamento de balcão;
-- consulta de disponibilidade;
-- alteração de status dos atendimentos;
-- apoio à organização da rotina presencial.
-
-### 💇 Profissionais
-
-- agenda mensal;
-- atendimentos do período;
-- histórico de serviços;
-- indicadores simples;
-- visão dos clientes atendidos;
-- alertas operacionais.
-
-### 🛍️ Vitrine digital
-
-A vitrine funciona como uma área de **reserva presencial**.
-
-O cliente pode visualizar produtos e registrar interesse de retirada no salão.  
-Não há venda online, checkout ou pagamento integrado.
-
-Produtos principais:
-
-- Kit Tratamento Capilar;
-- Perfume Capilar;
-- Reparador de Pontas.
-
-### 📦 Estoque
-
-- cadastro de produtos e insumos;
-- controle de quantidade;
-- entrada e saída manual;
-- estoque crítico;
-- baixa de insumos ao concluir atendimento.
-
-### 💰 Financeiro manual
-
-O financeiro foi mantido simples, sem integração bancária.
-
-O sistema permite:
-
-- entradas;
-- saídas;
-- caixa simples;
-- movimentações presenciais;
-- acompanhamento básico de valores.
-
-### 📊 BI básico
-
-O painel de BI apresenta indicadores como:
-
-- clientes ativos;
-- agendamentos;
-- atendimentos concluídos;
-- cancelamentos;
-- faltas;
-- serviços mais realizados;
-- profissionais mais requisitados;
-- reservas da vitrine;
-- estoque crítico;
-- entradas financeiras.
-
----
-
-## 🔐 Permissões
-
-O sistema utiliza permissões múltiplas, permitindo que um mesmo usuário tenha mais de uma função.
-
-```txt
-SUPER_ADMIN
-PROFISSIONAL
-RECEPCAO
-FINANCEIRO
-ESTOQUE
-CLIENTE
-```
+Um mesmo usuário pode acumular mais de um perfil (por exemplo, `SUPER_ADMIN` e `PROFISSIONAL`).
 
 | Perfil | Acesso principal |
 |---|---|
-| SUPER_ADMIN | Visão geral, BI, recepção, estoque, financeiro e cadastros |
-| PROFISSIONAL | Agenda própria e atendimentos |
-| RECEPCAO | Agenda operacional e agendamentos de balcão |
-| FINANCEIRO | Caixa manual e movimentações |
-| ESTOQUE | Produtos, insumos e movimentações |
-| CLIENTE | Agendamentos, reservas e perfil |
+| `SUPER_ADMIN` | Visão geral, BI, recepção, estoque, fornecedores, financeiro e cadastros |
+| `RECEPCAO` | Agenda operacional e agendamentos de balcão |
+| `PROFISSIONAL` | Agenda própria e atendimentos |
+| `FINANCEIRO` | Caixa manual e movimentações |
+| `ESTOQUE` | Produtos, insumos e movimentações |
+| `CLIENTE` | Agendamentos, reservas e perfil |
 
 ---
 
-## 📅 Status dos agendamentos
+## 🔄 Decisões de projeto
 
-```txt
-Agendado
-Confirmado
-Em Atendimento
-Concluido
-Cancelado
-Faltou
-Reagendado
+### Do e-commerce para o ERP
+
+No início do semestre, o projeto caminhava para um e-commerce. A equipe percebeu que venda online não resolvia o problema do salão: o valor estava em organizar a operação diária. O projeto foi **resetado** com foco em agenda, atendimento, estoque, financeiro e BI.
+
+### Do relacional para o MongoDB
+
+A modelagem inicial era relacional. A versão final foi refeita em **MongoDB Atlas**, que também mantém o banco online para a plataforma publicada.
+
+### Por que estas tecnologias
+
+| Escolha | Motivo |
+|---|---|
+| **Node.js + Express** | Uma linguagem só (JavaScript) em todo o back-end, conhecida pela equipe |
+| **EJS + Bootstrap** | Interface renderizada no servidor, suficiente para o escopo e rápida de entregar |
+| **MongoDB + Mongoose** | Documentos flexíveis para agendamentos e movimentações; Atlas mantém o banco online |
+| **MVC com `services/`** | Regras de negócio (agenda, estoque, financeiro, BI) fora dos controllers |
+| **Session + bcrypt** | Autenticação com sessão no servidor e senhas com hash |
+| **Render** | Deploy da aplicação publicada |
+
+---
+
+## ▶️ Como rodar
+
+**Pré-requisitos:** Node.js 18+ e um cluster no MongoDB Atlas.
+
+**1. Clone e instale**
+
+```bash
+git clone https://github.com/maxgodoydev-dotcom/studio-patty-leao.git
+cd studio-patty-leao
+npm install
 ```
 
-Esses status ajudam a organizar a rotina da recepção, a agenda dos profissionais, o histórico de atendimentos e os indicadores do sistema.
+**2. Configure as variáveis de ambiente**
+
+Copie `.env.example` para `.env` e preencha:
+
+```env
+MONGO_URI=mongodb+srv://USUARIO:SENHA@cluster.XXXXX.mongodb.net/?retryWrites=true&w=majority
+DB_NAME=studio_patty_leao
+SESSION_SECRET=string-aleatoria-longa-e-segura
+NODE_ENV=development
+PORT=5000
+```
+
+> ⚠️ Nunca envie credenciais reais para o GitHub. Em produção, configure as variáveis direto no Render.
+
+**3. Popule o banco**
+
+A carga é **manual**, importando os JSONs de [`mongodb-seeds-json/`](mongodb-seeds-json/) no Atlas, na ordem de `import-order.json`. O passo a passo está em `mongodb-seeds-json/README_IMPORTACAO_MONGODB.md`.
+
+> O comando `npm run seed` existe só por compatibilidade e **não insere dados**.
+
+**4. Inicie**
+
+```bash
+npm run dev    # desenvolvimento
+npm start      # produção
+```
+
+Acesse `http://localhost:5000`.
 
 ---
 
-## 🛣️ Rotas principais
+## 🔑 Acesso para avaliação
+
+Para testar os perfis na plataforma publicada:
+
+| Perfil | Usuário | Senha |
+|---|---|---|
+| `SUPER_ADMIN` | _[preencher]_ | _[preencher]_ |
+| `CLIENTE` | _[preencher]_ | _[preencher]_ |
+
+> Use apenas contas de demonstração, sem dados reais.
+
+---
+
+## 🧱 Stack
+
+| Camada | Tecnologias |
+|---|---|
+| Runtime e linguagem | Node.js 18+, JavaScript (ES6+) |
+| Back-end | Express.js 4.x |
+| Banco | MongoDB Atlas, Mongoose 8.x |
+| Interface | EJS, HTML, CSS, Bootstrap 5.3 |
+| Autenticação | Express Session, bcrypt |
+| Deploy e versionamento | Render, Git e GitHub |
+
+---
+
+## 🚫 O que o sistema não faz
+
+- Não é e-commerce: sem checkout, gateway ou pagamento digital.
+- A vitrine registra **apenas reservas presenciais**.
+- O financeiro é simples e manual, sem integração bancária.
+- CPF é opcional e não aparece em sessões nem em views comuns.
+
+---
+
+## 🗂️ Estrutura do projeto
+
+```txt
+models/                → Schemas Mongoose
+controllers/           → Entrada das regras por rota
+services/              → Regras de negócio (agenda, estoque, financeiro, BI)
+routes/                → Rotas Express
+middlewares/           → Autenticação, permissões e sessão
+views/                 → Templates EJS
+assets/                → CSS, JS, imagens e vídeos
+mongodb-seeds-json/    → JSONs para importação manual no Atlas
+docs/screenshots/      → Prints usados neste README
+```
+
+<details>
+<summary><b>🛣️ Rotas principais</b></summary>
+
+<br>
 
 | Rota | Acesso | Descrição |
 |---|---|---|
 | `/` | Público | Página inicial |
 | `/sobre` | Público | Página institucional |
 | `/servicos` | Público | Serviços e preços |
-| `/preco` | Público | Redirecionamento/compatibilidade |
+| `/preco` | Público | Redirecionamento (compatibilidade) |
 | `/vitrine` | Público | Vitrine de reserva presencial |
 | `/agendamento` | Cliente logado | Agendamento de serviços |
 | `/perfil/cliente` | Cliente | Perfil, agendamentos e reservas |
-| `/perfil/profissional` | Profissional | Agenda e visão de atendimentos |
+| `/perfil/profissional` | Profissional | Agenda e atendimentos |
 | `/admin` | Super Admin | BI central |
 | `/recepcao` | Super Admin / Recepção | Agenda operacional |
 | `/estoque` | Super Admin / Estoque | Controle de estoque |
 | `/financeiro` | Super Admin / Financeiro | Caixa manual e movimentações |
 
----
+</details>
 
-## 🗄️ Banco de dados
+<details>
+<summary><b>🗄️ Collections do MongoDB</b></summary>
 
-O projeto utiliza **MongoDB Atlas**.
-
-A população do banco é feita manualmente a partir dos arquivos JSON disponíveis em:
-
-```txt
-mongodb-seeds-json/
-```
-
-Arquivos auxiliares:
+<br>
 
 ```txt
-mongodb-seeds-json/README_IMPORTACAO_MONGODB.md
-mongodb-seeds-json/import-order.json
-mongodb-seeds-json/collection-map.json
+usuarios, clientes, profissionals, servicos, produtos, estoques,
+servicoinsumos, agendamentos, reservavitrines, caixas,
+movimentacaoestoques, movimentacaofinanceiras, fornecedors,
+tipopagtos, vendas
 ```
 
-O comando `npm run seed` foi mantido apenas por compatibilidade, mas não executa inserts automáticos.
-
-### Collections principais
-
-```txt
-usuarios
-clientes
-profissionals
-servicos
-produtos
-estoques
-servicoinsumos
-agendamentos
-reservavitrines
-caixas
-movimentacaoestoques
-movimentacaofinanceiras
-fornecedors
-tipopagtos
-vendas
-```
+</details>
 
 ---
 
-## ⚙️ Variáveis de ambiente
+## 👥 Equipe
 
-Use `.env.example` como referência.
-
-Crie um arquivo `.env` apenas localmente ou configure as variáveis diretamente no Render.
-
-```env
-MONGO_URI=mongodb+srv://USUARIO:SENHA@cluster.XXXXX.mongodb.net/?retryWrites=true&w=majority
-DB_NAME=studio_patty_leao
-SESSION_SECRET=string-aleatoria-longa-e-segura
-NODE_ENV=production
-PORT=5000
-```
-
-Nunca envie credenciais reais para o GitHub.
+| Integrante | Contribuições |
+|---|---|
+| **Max Godoy** | Reestruturação geral, mudança de escopo para ERP simples, arquitetura MVC, banco no MongoDB Atlas, deploy no Render, regras de negócio, BI e integração geral |
+| **Luca Simões Dagostino** | Arquitetura MVC, validação da estrutura, fluxos operacionais, BI, testes de funcionalidades e consolidação da versão final |
+| **Maycon Lima Teixeira Cavalcante** | Modelagem e validação do banco, análise das regras de negócio, validação de decisões operacionais e consistência dos dados |
 
 ---
 
-## ▶️ Como executar localmente
+<div align="center">
 
-Clone o repositório:
+🦁 **Studio Patty Leão** · Projeto extensionista · 3º semestre DSM · FATEC Zona Sul
 
-```bash
-git clone https://github.com/maxgodoydev-dotcom/studio-patty-leao.git
-```
-
-Acesse a pasta:
-
-```bash
-cd studio-patty-leao
-```
-
-Instale as dependências:
-
-```bash
-npm install
-```
-
-Execute em desenvolvimento:
-
-```bash
-npm run dev
-```
-
-Execute em produção:
-
-```bash
-npm start
-```
-
----
-
-## 🧪 Teste de usabilidade
-
-Durante o teste de usabilidade com a cliente, a demonstração levou aproximadamente **40 minutos**.
-
-O tempo maior aconteceu porque foi necessário apresentar o sistema, explicar os fluxos principais, demonstrar os módulos e validar o entendimento da solução com a usuária final.
-
-Para a entrega final, os vídeos serão editados em uma versão mais objetiva, destacando as funcionalidades principais e o impacto prático da plataforma.
-
----
-
-## 📈 Impacto esperado
-
-Com a plataforma, o Studio Patty Leão passa a contar com uma base digital para organizar parte da operação.
-
-Entre os principais ganhos esperados estão:
-
-- presença digital própria;
-- centralização de informações;
-- melhor organização dos agendamentos;
-- controle básico de estoque;
-- visão gerencial por indicadores;
-- separação de permissões por setor;
-- acompanhamento dos atendimentos;
-- apoio à tomada de decisão.
-
----
-
-## 👥 Autores e principais contribuições
-
-Projeto desenvolvido no contexto acadêmico do curso de **Desenvolvimento de Software Multiplataforma da FATEC Zona Sul**.
-
-A versão final publicada foi estruturada e consolidada principalmente por:
-
-## Equipe e contribuições
-
-| Integrante | Principais contribuições |
-|------------|--------------------------|
-| **Max Godoy** | Reestruturação geral do projeto, mudança de escopo de e-commerce para ERP simples, organização da arquitetura MVC, reestruturação do banco MongoDB Atlas, deploy no Render, versionamento no GitHub, regras de negócio, BI e integração geral da aplicação. |
-| **Luca Simões Dagostino** | Organização da arquitetura MVC, validação da estrutura do sistema, participação na transformação do projeto para ERP simples, contribuições em fluxos operacionais, BI, testes de funcionalidades e consolidação da versão final. |
-| **Maycon Lima Teixeira Cavalcante** | Modelagem e validação do banco de dados, análise das regras de negócio, validação de decisões operacionais, participação na arquitetura MVC e olhar crítico sobre consistência dos dados, fluxos e estrutura geral do sistema. |
-
----
-
-## 📌 Observações importantes
-
-- O sistema não é e-commerce.
-- Não possui checkout online.
-- Não possui gateway de pagamento.
-- Não possui pagamento digital integrado.
-- CPF é opcional e não aparece em sessões ou views comuns.
-- A vitrine registra apenas reservas presenciais.
-- O financeiro é simples e manual.
-- O estoque de insumos é baixado ao concluir atendimento.
-- O estoque de produto da vitrine é baixado quando a reserva é marcada como retirada.
-
----
-
-## 🏢 Organização atendida
-
-O projeto foi desenvolvido para o **Studio Patty Leão**, salão de beleza utilizado como organização beneficiária no contexto do projeto acadêmico extensionista.
-
-A solução foi pensada para apoiar a digitalização de parte da rotina operacional da empresa, principalmente em agendamentos, atendimento, estoque, financeiro manual, vitrine de reservas e indicadores básicos de gestão.
-
----
-
-## 🎓 Contexto acadêmico
-
-Projeto desenvolvido como atividade acadêmica extensionista, com foco em aplicação prática de tecnologia para uma organização real.
-
-O objetivo foi entregar uma solução funcional, com código-fonte público, documentação técnica, plataforma online e evidências de impacto operacional.
+</div>
